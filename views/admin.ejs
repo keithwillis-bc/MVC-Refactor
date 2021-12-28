@@ -23,7 +23,7 @@
       <% } else { %>
         <ul id="posts-list">
           <% for (const post of posts) { %>
-            <%- include('includes/post-item', { title: post.title, postId: post._id }) %>
+            <%- include('includes/post-item', { title: post.title, postId: post.id }) %>
           <% } %>
         </ul>
       <% } %>
