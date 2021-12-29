@@ -122,10 +122,15 @@ function performLogout(req, res) {
   });
 }
 
+function get401(req, res) {
+  res.status(401).render("401");
+}
+
 module.exports = {
   getSignUp,
   getLogin,
   addAccount,
   performLogin,
   performLogout,
+  get401,
 };
